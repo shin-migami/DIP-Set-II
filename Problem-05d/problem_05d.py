@@ -10,7 +10,6 @@ image = cv2.imread("SII_5_4.tif")
 cv2.imshow("Input", image)
 image_org = image
 kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (55, 55))
-#image = cv2.morphologyEx(image, cv2.MORPH_OPEN, kernel)
 image = cv2.morphologyEx(image, cv2.MORPH_CLOSE, kernel)
 #kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (90, 90))
 #image = cv2.morphologyEx(image, cv2.MORPH_OPEN, kernel)
